@@ -14,6 +14,6 @@ xzcat ../${PATCH}.patch.xz | patch -p1
 
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig
 
-cat ../config.patch | patch linux/.config
+cat ../config.patch | patch .config
 
 #make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
